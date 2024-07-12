@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba Conversor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <section>
-        
+        <h3>Conversor de Monedas Nacional</h3>
+        <div class="container">
+            <h4>Pesos CLP</h4>
+            <form id="form">
+                <input type="text" placeholder="Ingrese el monto en CLP" id="value-input">
+                <p>Moneda a convertir:</p>
+                <select id="currency" name="choose-currency">
+                    <option value="USD">USD</option>
+                    <option value="Euro">Euro</option>
+                </select>
+                <br>
+                <button id="search-btn" class="search-btn">Buscar</button>
+                <p id="result">...</p>
+            </form>
+        </div>
     </section>
     <script src="/assets/js/script.js"></script>
 </body>
